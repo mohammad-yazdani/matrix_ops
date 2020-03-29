@@ -40,33 +40,41 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
   restat = 1
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
-# Object build statements for EXECUTABLE target cmTC_0a744
+# Object build statements for EXECUTABLE target cmTC_137ca
 
 
 #############################################
-# Order-only phony target for cmTC_0a744
+# Order-only phony target for cmTC_137ca
 
-build cmake_object_order_depends_target_cmTC_0a744: phony || CMakeFiles/cmTC_0a744.dir
-build CMakeFiles/cmTC_0a744.dir/feature_tests.cxx.o: CXX_COMPILER__cmTC_0a744 /home/myazdani/cuda/playground/matrix_ops/build/CMakeFiles/feature_tests.cxx || cmake_object_order_depends_target_cmTC_0a744
-  DEP_FILE = CMakeFiles/cmTC_0a744.dir/feature_tests.cxx.o.d
-  FLAGS = -std=c++98
-  OBJECT_DIR = CMakeFiles/cmTC_0a744.dir
-  OBJECT_FILE_DIR = CMakeFiles/cmTC_0a744.dir
+build cmake_object_order_depends_target_cmTC_137ca: phony || CMakeFiles/cmTC_137ca.dir
+build CMakeFiles/cmTC_137ca.dir/main.cu.o: CUDA_COMPILER__cmTC_137ca main.cu || cmake_object_order_depends_target_cmTC_137ca
+  DEP_FILE = CMakeFiles/cmTC_137ca.dir/main.cu.o.d
+  OBJECT_DIR = CMakeFiles/cmTC_137ca.dir
+  OBJECT_FILE_DIR = CMakeFiles/cmTC_137ca.dir
 
 # =============================================================================
-# Link build statements for EXECUTABLE target cmTC_0a744
+# Device Link build statements for EXECUTABLE target cmTC_137ca
 
 
 #############################################
-# Link the executable cmTC_0a744
+# Link the executable CMakeFiles/cmTC_137ca.dir/cmake_device_link.o
 
-build cmTC_0a744: CXX_EXECUTABLE_LINKER__cmTC_0a744 CMakeFiles/cmTC_0a744.dir/feature_tests.cxx.o
-  LINK_FLAGS = -rdynamic
-  OBJECT_DIR = CMakeFiles/cmTC_0a744.dir
+build CMakeFiles/cmTC_137ca.dir/cmake_device_link.o: CUDA_EXECUTABLE_DEVICE_LINKER__cmTC_137ca CMakeFiles/cmTC_137ca.dir/main.cu.o
+  OBJECT_DIR = CMakeFiles/cmTC_137ca.dir
+  TARGET_FILE = CMakeFiles/cmTC_137ca.dir/cmake_device_link.o
+# =============================================================================
+# Link build statements for EXECUTABLE target cmTC_137ca
+
+
+#############################################
+# Link the executable cmTC_137ca
+
+build cmTC_137ca: CUDA_EXECUTABLE_LINKER__cmTC_137ca CMakeFiles/cmTC_137ca.dir/main.cu.o CMakeFiles/cmTC_137ca.dir/cmake_device_link.o
+  OBJECT_DIR = CMakeFiles/cmTC_137ca.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = cmTC_0a744
-  TARGET_PDB = cmTC_0a744.dbg
+  TARGET_FILE = cmTC_137ca
+  TARGET_PDB = cmTC_137ca.dbg
 
 #############################################
 # Utility command for edit_cache
@@ -90,7 +98,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 #############################################
 # The main all target.
 
-build all: phony cmTC_0a744
+build all: phony cmTC_137ca
 
 #############################################
 # Make the all target the default.
