@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/home/myazdani/cuda/playground/matrix_ops/build",
-  "command": "/usr/bin/nvcc  -DUSE_CUDA    -x cu -c /home/myazdani/cuda/playground/matrix_ops/checkThreadIndex.cu -o CMakeFiles/checkThreadIndex.dir/checkThreadIndex.cu.o",
-  "file": "/home/myazdani/cuda/playground/matrix_ops/checkThreadIndex.cu"
-}
-]
